@@ -9,6 +9,17 @@ function helloWorld() {
 }
 
 //sayHello function
-function sayHello() {
-    return "Hello"
+function sayHello(input) {
+    if (input === "Alex") {
+        return "Hello, Alex!"
+
+    } else {
+        (input === "Jane!")
+        return "Hello, Jane!"
+    }
+
 }
+
+
+
+
