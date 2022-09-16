@@ -13,10 +13,10 @@ function sayHello(input) {
     if (input === "Alex") {
         return "Hello, Alex!"
 
-    } else {
-        (input === "Jane!")
+    } else (input === "Jane"); {
         return "Hello, Jane!"
     }
+
 
 }
 
