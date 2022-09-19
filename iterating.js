@@ -56,5 +56,17 @@
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
-
+    let array = ["1","2","3","4","5"]
+    function first(array){
+        console.log(array[0])
+    }
+    function  second(array){
+        console.log(array[1])
+    }
+    function last(array){
+        console.log(array[4])
+    }
+    last(array);
+    second(array);
+    first(array);
 })();
