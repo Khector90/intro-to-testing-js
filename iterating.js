@@ -33,6 +33,7 @@
      */
     for(let i = 0; i < names.length; i++){
         console.log(names + " " + i);
+        //console.log(names[i]);
     }
 
     /**
@@ -59,14 +60,18 @@
     let array = ["1","2","3","4","5"]
     function first(array){
         console.log(array[0])
+        // return array[0]
     }
     function  second(array){
         console.log(array[1])
+        // return array[1]
     }
     function last(array){
+        // this one didn't work return array[array.length - 1];
         console.log(array[4])
+        // return array[4]
     }
-    last(array);
+    last(array)
     second(array);
     first(array);
 })();
