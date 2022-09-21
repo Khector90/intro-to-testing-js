@@ -24,10 +24,10 @@
      * string, and <li> tags around each planet.
      */
 
-    let planetsStringOne = "<br>Mercury</br>,<br>Venus</br>,<br>Earth</br>,<br>Mars</br>,<br>Jupiter</br>,<br>Saturn</br>,<br>Uranus</br>,<br>Neptune</br>";
+    let planetsStringOne = planetsArray.join("<br>");
     console.log(planetsStringOne);
 
-    let planetStringTwo = <ul>'mercury','venus','earth','mars'</ul>;
+    let planetStringTwo = "<ul><lio>" + planetsArray.join("")
     console.log(planetStringTwo);
 
 })();

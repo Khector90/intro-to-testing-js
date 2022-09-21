@@ -12,10 +12,10 @@
      *  > console.log(person.lastName) // "Sanchez"
      */
 
-    let person ={};
-
-    person.firstName = "Kiley";
-    person.lastName = "Hector";
+    // let person ={};
+    //
+    // person.firstName = "Kiley";
+    // person.lastName = "Hector";
     // console.log(person.firstName);
 
     /**
@@ -28,13 +28,11 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
-
-
-
-
-
-
-
+    // person.sayHello = function(){
+    //     console.log("Hello from " + person.firstName + " " + person.lastName);
+    // };
+    //
+    // person.sayHello();
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -50,11 +48,13 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
+    // let shoppers = [
     //     {name: 'Cameron', amount: 180},
     //     {name: 'Ryan', amount: 250},
     //     {name: 'George', amount: 320}
     // ];
+    //
+    // console.log(shoppers)
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -68,6 +68,14 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+    let books = [
+        {title: "Starship troopers", authorFirstName: "Robert", authorLastName: "Heinlein"},
+        {title: "Witcher Series", authorFirstName: "Andrzej", authorLastName: "Sapkowski"},
+        {title: "Saga", authorFirstName: "Brian", authorLastName: "Vaughn"},
+        {title: "The Summoner", authorFirstName: "Gail", authorLastName: "Martin"},
+        {title: "Fevre Dream", authorFirstName: "George", authorLastName: "Martin"}
+    ]
+    // console.log(books);
 
     /**
      * TODO:
@@ -93,6 +101,9 @@
      *      ---
      *      ...
      */
+    books.forEach(function (book,index){
+        console.log("Book #:  " + (index + 1)  + " \n Title: " + book.title + " \n Author: " + book.authorFirstName + " " + book.authorLastName);
+    })
 
     /**
      * Bonus:
