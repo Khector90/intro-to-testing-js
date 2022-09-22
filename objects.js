@@ -56,6 +56,18 @@
     //
     // console.log(shoppers)
 
+    // function hebOffer(arrayOfShoppers){
+    //
+    //     arrayOfShoppers.forEach(function (shopper){
+    //
+    //         `${shopper.name}, you qualified for out offer! You
+    //         purchased ${shopper.amount} which earns a 12% discount.
+    //         Your discount is ${shopper.amount * .12} which gives you a
+    //         new total ${shopper.amount} - {shopper.amount * .12)}`);
+    //
+    //     })
+    // }
+
     /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
@@ -68,13 +80,13 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-    let books = [
-        {title: "Starship troopers", authorFirstName: "Robert", authorLastName: "Heinlein"},
-        {title: "Witcher Series", authorFirstName: "Andrzej", authorLastName: "Sapkowski"},
-        {title: "Saga", authorFirstName: "Brian", authorLastName: "Vaughn"},
-        {title: "The Summoner", authorFirstName: "Gail", authorLastName: "Martin"},
-        {title: "Fevre Dream", authorFirstName: "George", authorLastName: "Martin"}
-    ]
+    // let books = [
+    //     {title: "Starship troopers", authorFirstName: "Robert", authorLastName: "Heinlein"},
+    //     {title: "Witcher Series", authorFirstName: "Andrzej", authorLastName: "Sapkowski"},
+    //     {title: "Saga", authorFirstName: "Brian", authorLastName: "Vaughn"},
+    //     {title: "The Summoner", authorFirstName: "Gail", authorLastName: "Martin"},
+    //     {title: "Fevre Dream", authorFirstName: "George", authorLastName: "Martin"}
+    // ]
     // console.log(books);
 
     /**
@@ -101,9 +113,9 @@
      *      ---
      *      ...
      */
-    books.forEach(function (book,index){
-        console.log("Book #:  " + (index + 1)  + " \n Title: " + book.title + " \n Author: " + book.authorFirstName + " " + book.authorLastName);
-    })
+    // books.forEach(function (book,index){
+    //     console.log("Book #:  " + (index + 1)  + " \n Title: " + book.title + " \n Author: " + book.authorFirstName + " " + book.authorLastName);
+    // })
 
     /**
      * Bonus:
@@ -115,5 +127,43 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+    let books = [
+        {title: "Starship troopers", authorFirstName: "Robert", authorLastName: "Heinlein"},
+        {title: "Witcher Series", authorFirstName: "Andrzej", authorLastName: "Sapkowski"},
+        {title: "Saga", authorFirstName: "Brian", authorLastName: "Vaughn"},
+        {title: "The Summoner", authorFirstName: "Gail", authorLastName: "Martin"},
+        {title: "Fevre Dream", authorFirstName: "George", authorLastName: "Martin"}
+    ]
+
+
+    function createBook(title, firstName, lastName){
+        let book = {title: "Lamb: The Gospel According to Biff ", authorFirstName: "Peter", authorLastName: "Douglas",}
+        return book
+    }
+
+    function showBookInfo(book){
+    let niceString = book.title + "\n" + book.authorFirstName + "\n" + book.authorLastName + "\n"
+    return niceString;
+
+    }
+
+    console.log(showBookInfo(books[2]));
+
+
+
+
+
+
+
+
+
+
+
+
+    +
+
+
+    console.log (books+= createBook("Hitch Hikers Guide", "Douglas", "Adams"));
+
 
 })();
